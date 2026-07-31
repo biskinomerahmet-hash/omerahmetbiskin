@@ -1,50 +1,82 @@
-<div class="kitap">
-
-<img src="DOSYA_ADI.png" alt="Kitap Kapağı">
-
-<h2>İKİNCİ KİTABIN ADI</h2>
-
-<p>
-İkinci kitabın kısa tanıtımı.
-</p>
-
-<a class="buton" href="#">Amazon</a>
-
-<a class="buton" href="#">Google Play</a>
-
-<a class="buton" href="#">Apple Books</a>
-
-<a class="buton" href="#">Barnes & Noble</a>
-
-</div>
 <!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hakkımda</title>
+<title>Ömer Ahmet Bişkin</title>
 
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
     font-family:Arial,Helvetica,sans-serif;
     background:#f4f6f9;
     color:#333;
-    max-width:900px;
-    margin:40px auto;
-    padding:20px;
-    line-height:1.8;
+    line-height:1.7;
 }
 
-h1{
-    color:#12395b;
+header{
+    background:#12395b;
+    color:white;
+    padding:60px 20px;
+    text-align:center;
 }
 
-a{
-    display:inline-block;
-    margin-top:20px;
-    color:#12395b;
+header h1{
+    font-size:48px;
+}
+
+header p{
+    font-size:22px;
+    margin-top:10px;
+}
+
+nav{
+    background:#0b2d48;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
     text-decoration:none;
+    margin:0 20px;
     font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd54f;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+}
+
+.card{
+    background:white;
+    margin-bottom:25px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+h2{
+    color:#12395b;
+    margin-bottom:15px;
+}
+
+footer{
+    background:#12395b;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
 }
 </style>
 
@@ -52,21 +84,83 @@ a{
 
 <body>
 
-<h1>Hakkımda</h1>
+<header>
+
+<h1>Ömer Ahmet Bişkin</h1>
+
+<p>Araştırmacı Yazar</p>
+
+</header>
+
+<nav>
+
+<a href="index.html">Ana Sayfa</a>
+<a href="hakkimda.html">Hakkımda</a>
+<a href="kitaplar.html">Kitaplar</a>
+<a href="makaleler.html">Makaleler</a>
+<a href="iletisim.html">İletişim</a>
+
+</nav>
+
+<div class="container">
+
+<div class="card">
+
+<h2>Hoş Geldiniz</h2>
 
 <p>
-Merhaba, ben <strong>Ömer Ahmet Bişkin</strong>.
+Ömer Ahmet Bişkin'in resmî internet sitesine hoş geldiniz.
 </p>
+
+</div>
+
+<div class="card">
+
+<h2>Hakkımda</h2>
 
 <p>
-İslâmî ilimler, Kur'ân-ı Kerîm, hadis, akaid ve ilmihal alanlarında araştırmalar yapıyor, kitaplar ve makaleler yayımlıyorum.
+İslâm, Kur'ân, hadis, akaid ve ilmihal alanlarında araştırmalar yapmakta, eserler yayımlamaktayım.
 </p>
+
+</div>
+
+<div class="card">
+
+<h2>Kitaplar</h2>
 
 <p>
-Bu web sitesi; yayımladığım eserleri, makaleleri ve çalışmalarımı tek bir çatı altında sunmak amacıyla hazırlanmıştır.
+Kitaplar sayfasından eserlerime ulaşabilirsiniz.
 </p>
 
-<a href="index.html">← Ana Sayfaya Dön</a>
+</div>
+
+<div class="card">
+
+<h2>Makaleler</h2>
+
+<p>
+Makalelerim bu bölümde yayımlanacaktır.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>İletişim</h2>
+
+<p>
+Sosyal medya hesaplarım ve iletişim bilgilerim burada yer alacaktır.
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Ömer Ahmet Bişkin
+
+</footer>
 
 </body>
 </html>
