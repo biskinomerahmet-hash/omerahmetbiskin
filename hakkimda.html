@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Hakkımda | Ömer Ahmet Bişkin</title>
+
+<meta name="description" content="Ömer Ahmet Bişkin hakkında bilgiler, araştırmaları, eserleri ve çalışmaları.">
 
 <style>
 
@@ -17,25 +20,32 @@ box-sizing:border-box;
 
 body{
 font-family:Arial,Helvetica,sans-serif;
-background:#f8f6f1;
+background:#f7f5ef;
 color:#333;
 line-height:1.8;
 }
 
 header{
-background:linear-gradient(135deg,#12395b,#1b5b8f);
+background:linear-gradient(135deg,#12395b,#1c6aa3);
 color:#fff;
-padding:45px 20px;
+padding:60px 20px;
 text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,.15);
 }
 
 header h1{
-font-size:42px;
+font-size:48px;
+margin-bottom:12px;
+}
+
+header p{
+font-size:20px;
+opacity:.95;
 }
 
 nav{
-background:#0b2d48;
-padding:15px;
+background:#0d2f4f;
+padding:16px;
 text-align:center;
 }
 
@@ -44,6 +54,8 @@ color:#fff;
 text-decoration:none;
 margin:0 18px;
 font-weight:bold;
+font-size:17px;
+transition:.3s;
 }
 
 nav a:hover{
@@ -51,49 +63,114 @@ color:#ffd54f;
 }
 
 .container{
-width:92%;
-max-width:1300px;
-margin:40px auto;
-background:#fff;
-padding:50px;
-border-radius:18px;
-box-shadow:0 8px 25px rgba(0,0,0,.10);
+width:94%;
+max-width:1350px;
+margin:45px auto;
 }
 
-.profile{
+.hero{
+background:#fff;
+border-radius:18px;
+padding:50px;
 display:flex;
 flex-wrap:wrap;
 align-items:center;
-gap:40px;
+gap:45px;
+box-shadow:0 8px 25px rgba(0,0,0,.10);
 }
 
-.profile img{
+.photo{
+flex:0 0 280px;
+text-align:center;
+}
+
+.photo img{
 width:260px;
-border-radius:15px;
-box-shadow:0 8px 20px rgba(0,0,0,.15);
+border-radius:16px;
+border:6px solid #fff;
+box-shadow:0 8px 25px rgba(0,0,0,.18);
 }
 
-.profile-text{
+.info{
 flex:1;
 }
 
-.profile-text h2{
-font-size:34px;
+.info h2{
+font-size:40px;
 color:#12395b;
 margin-bottom:20px;
 }
 
-.profile-text p{
+.info p{
 font-size:18px;
 margin-bottom:18px;
+text-align:justify;
+}
+.info h3{
+font-size:28px;
+color:#12395b;
+margin:35px 0 15px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:#fff;
+padding:30px;
+border-radius:16px;
+box-shadow:0 6px 20px rgba(0,0,0,.10);
+transition:.3s;
+border-top:5px solid #12395b;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h4{
+font-size:22px;
+color:#12395b;
+margin-bottom:15px;
+}
+
+.card p{
+font-size:17px;
 }
 
 footer{
+margin-top:60px;
 background:#12395b;
 color:#fff;
 text-align:center;
-padding:25px;
-margin-top:60px;
+padding:30px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+padding:35px;
+}
+
+.info h2{
+font-size:32px;
+}
+
+.photo img{
+width:220px;
+}
+
+nav a{
+display:block;
+margin:12px 0;
+}
+
 }
 
 </style>
@@ -103,49 +180,139 @@ margin-top:60px;
 <body>
 
 <header>
-<h1>Hakkımda</h1>
+
+<h1>Ömer Ahmet Bişkin</h1>
+
+<p>Araştırmacı Yazar</p>
+
 </header>
 
 <nav>
+
 <a href="index.html">Ana Sayfa</a>
+
 <a href="kitaplar.html">Kitaplar</a>
+
 <a href="makaleler.html">Makaleler</a>
+
 <a href="iletisim.html">İletişim</a>
+
 </nav>
 
 <div class="container">
 
-<div class="profile">
+<div class="hero">
+
+<div class="photo">
 
 <img src="profil.png" alt="Ömer Ahmet Bişkin">
 
-<div class="profile-text">
+</div>
 
-<h2>Ömer Ahmet Bişkin</h2>
+<div class="info">
+
+<h2>Hakkımda</h2>
 
 <p>
-Araştırmacı yazar olarak İslâmî ilimler alanında çalışmalar yürütmekte, kitaplar ve makaleler yayımlamaktayım.
+Araştırmalarımın temel amacı İslâmî ilimleri güvenilir kaynaklar ışığında sade, anlaşılır ve sistemli bir şekilde okuyucuya ulaştırmaktır.
 </p>
 
 <p>
-Çalışmalarımın temel amacı Kur'ân-ı Kerîm, sünnet ve klasik İslâm kaynaklarını esas alarak güvenilir bilgiyi sade ve anlaşılır bir şekilde okuyucuya sunmaktır.
+Kur'ân-ı Kerîm, hadis, akaid, ilmihal, tefsir ve İslâm tarihi alanlarında çalışmalar yapmakta; kitaplar ve makaleler yayımlamaktayım.
 </p>
+<h3>Çalışma Alanları</h3>
+
+<div class="cards">
+
+<div class="card">
+<h4>Kur'ân-ı Kerîm</h4>
+<p>Kur'ân-ı Kerîm'in anlaşılması, temel kavramları ve İslâmî hayat üzerindeki rehberliği üzerine çalışmalar.</p>
+</div>
+
+<div class="card">
+<h4>Hadis ve Sünnet</h4>
+<p>Hadis ilmi, hadis usûlü ve sünnetin dinî hayattaki yeri üzerine araştırmalar.</p>
+</div>
+
+<div class="card">
+<h4>Akaid ve İlmihal</h4>
+<p>İman esasları, ibadetler ve temel dinî bilgileri anlaşılır bir üslupla sunmaya yönelik eserler.</p>
+</div>
+
+<div class="card">
+<h4>Kitaplar ve Makaleler</h4>
+<p>Türkçe ve farklı dillerde yayımlanan kitaplar ile güncel makaleler.</p>
+</div>
+
+</div>
+
+<h3>Yayın Faaliyetleri</h3>
 
 <p>
-Bu internet sitesi; kitaplarımı, makalelerimi ve uluslararası yayınlarımı bir araya getiren resmî web sitemdir.
+Hazırladığım eserler dijital ve basılı platformlarda yayımlanmakta, farklı ülkelerde okuyucularla buluşmaktadır. Çalışmalarımın temel amacı güvenilir bilgiyi sade ve anlaşılır bir üslupla sunmaktır.
 </p>
 
 </div>
 
 </div>
+<section style="margin-top:60px;">
+
+<h2 style="text-align:center;color:#12395b;margin-bottom:35px;font-size:34px;">
+Genel Bilgiler
+</h2>
+
+<div class="cards">
+
+<div class="card">
+<h4>Araştırma Alanları</h4>
+<p>Kur'ân-ı Kerîm, hadis, tefsir, akaid, ilmihal, İslâm tarihi ve temel İslâmî ilimler.</p>
+</div>
+
+<div class="card">
+<h4>Yayınlar</h4>
+<p>Basılı ve dijital kitaplar, makaleler, uluslararası platformlarda yayımlanan çalışmalar.</p>
+</div>
+
+<div class="card">
+<h4>Amaç</h4>
+<p>Güvenilir kaynaklara dayanan bilgiyi açık, anlaşılır ve sistemli bir şekilde okuyucuyla buluşturmak.</p>
+</div>
+
+</div>
+
+</section>
+
+<section style="margin-top:60px;">
+
+<h2 style="text-align:center;color:#12395b;margin-bottom:35px;font-size:34px;">
+İletişim
+</h2>
+
+<div class="card">
+
+<p style="font-size:18px;text-align:center;">
+Kitaplar, makaleler ve diğer çalışmalar hakkında bilgi almak için
+<b>İletişim</b> sayfasını ziyaret edebilirsiniz.
+</p>
+
+</div>
+
+</section>
 
 </div>
 
 <footer>
 
+<p style="font-size:18px;">
 © 2026 Ömer Ahmet Bişkin
+</p>
+
+<p>
+Araştırmacı Yazar • Resmî Web Sitesi
+</p>
 
 </footer>
 
 </body>
+
 </html>
