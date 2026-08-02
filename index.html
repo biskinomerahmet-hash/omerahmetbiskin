@@ -142,6 +142,7 @@ margin:45px 0;
 }
 
 .card{
+display:block;
 background:#12395b;
 color:#fff;
 padding:30px;
@@ -149,8 +150,14 @@ border-radius:18px;
 text-align:center;
 box-shadow:0 5px 15px rgba(0,0,0,.15);
 transition:.3s;
+text-decoration:none;
 }
 
+.card:hover{
+transform:translateY(-8px);
+background:#1b5b8f;
+color:#fff;
+}
 .card:hover{
 transform:translateY(-8px);
 }
@@ -296,9 +303,26 @@ width:100%;
 
 <div class="cards">
 
-<div class="card">
-<h3>Kitaplarım</h3>
-<p>Yayımlanmış eserlerime ulaşabilirsiniz.</p>
+<a href="fikih.html" class="card">
+<h3>Haftanın Fıkıh Sorusu</h3>
+<p>Her hafta güncellenen fıkıh sorularını okuyun.</p>
+</a>
+
+<a href="ayet.html" class="card">
+<h3>Günün Âyeti</h3>
+<p>Kur'ân-ı Kerîm'den seçilmiş ayetler.</p>
+</a>
+
+<a href="video.html" class="card">
+<h3>Son Video</h3>
+<p>Yeni eklenen videoları izleyin.</p>
+</a>
+
+<a href="makaleler.html" class="card">
+<h3>Son Makale</h3>
+<p>En son yayımlanan makaleleri okuyun.</p>
+</a>
+
 </div>
 
 <div class="card">
